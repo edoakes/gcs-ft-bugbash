@@ -1,0 +1,11 @@
+# name: !YOUR_NAME_HERE!
+project: gcs-ft-bugbash
+build_id: anyscaleray231-py38
+compute_config_id: cpt_ijpwaf481s6nk72uuxk1t6djxw
+ray_serve_config:
+  import_path: app:app
+  runtime_env:
+    working_dir: .
+    upload_path: s3://anyscale-dogfood-organization-data-us-west-2/org_7c1Kalm9WcX2bNIjW53GUT/runtime_envs/
+ray_gcs_external_storage_config:
+  address: "gcs-ft-dogfooding.onvfjm.clustercfg.memorydb.us-west-2.amazonaws.com:6379"
